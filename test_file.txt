@@ -1,1 +1,13 @@
-Boooogaaaahh!!!
+So far I:
+	*) forked the original repo on GitHub
+	*) created a local clone of the fork ("origin") -> git clone https://github.com/LewsTherin511/Spoon-Knife.git
+	*) added the URL of the original ("upstream") repo -> git remote add upstream https://github.com/octocat/Spoon-Knife.git
+
+
+to sync local clone of fork with the upstream:
+	*) check for updates on the upstream repo -> git fetch upstream
+	*) move to master branch (already there, actually) -> git checkout master
+	*) git merge upstream/master
+
+Now local copy is synced with upstream, but forked repo is not. To sync it:
+	*) git push origin/master
